@@ -1,0 +1,36 @@
+.BL {
+    .BlueGrug {
+        width: 75px;
+        height: 75px;
+        background: rgb(141, 141, 141);
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            background-color: blue;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 10px 1px black , inset 0px 0px 10px 1px rgb(66, 164, 202);
+            .BlueGrug-paragraf {
+                color: white;
+                font-size: 22px;
+            }
+        }
+    }
+    
+    .arrow-blue {
+        width: 100px;
+        height: 150px;
+        transform: rotate(90deg);
+        position: relative;
+        left: 153px;
+        bottom: 110px;
+    }
+}
+

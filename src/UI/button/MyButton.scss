@@ -1,0 +1,16 @@
+.MyButton {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 3px solid rgb(84, 168, 216);
+    color: rgb(84, 168, 216);
+}
+
+.MyButton:hover {
+    color: teal;
+    border: 3px solid teal;
+}
+
+.MyButton:active {
+    color: blue;
+    border: 3px solid blue;
+}

@@ -1,0 +1,213 @@
+.Redirect {
+    position: relative;
+    top: 300px;
+    &-content {
+        width: 700px;
+        height: 500px;
+        border: 1px solid rgb(219, 219, 219);;
+        margin: 0 auto;
+        position: relative;
+        bottom: 120px;
+        .h1-content {
+            text-align: center;
+            margin-bottom: 40px;
+            .h1-teg {
+                text-transform: uppercase;
+                letter-spacing: 8px;
+                font-size: 45px;
+                font-weight: 600;
+                font-family: 'Cormorant Garamon';
+                transform: translate(0px , -200px);
+                opacity: 0;
+            }
+            .h1-teg.visible {
+                transition-duration: 1s;
+                transition-delay: 0.3s;
+                opacity: 1;
+                transform: translate(0px , 0px);
+            }
+            .line {
+                width: 80px;
+                height: 2px;
+                background-color: black;
+                margin: 0 auto;
+                position: relative;
+                right: 15px;
+            }
+        }
+        .about-content {
+            .about-words {
+                .about-center {
+                    text-align: center;
+                    font-size: 27px;
+                    margin-bottom: 25px;
+                    opacity: 0;
+                }
+                .about-center.visible {
+                    transition-duration: 1s;
+                    transition-delay: 0.1s;
+                    opacity: 1;
+                }
+                .about-ul.visible {
+                    transition-duration: 1s;
+                    transform: translate(0px , 0);
+                }
+                .about-ul {
+                    transform: translate(-740px , 0);
+                
+                    .about-li {
+                        margin-top: 5px;
+                        font-size: 22px;
+                    }
+                }
+                .second-observer {
+                    position: relative;
+                    bottom: 75px;
+                    opacity: 0;
+                }
+                .second-observer.visible {
+                      position: fixed;
+                }
+            }
+        }
+    }
+    .Redirect-End {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        bottom: 40px;
+        transform: translate(-1000px , 0);
+    }
+    .Redirect-End.visible {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        bottom: 40px;
+        transform: translate(0px , 0);
+        transition-duration: 2s;
+    }
+    .observer {
+        position: fixed;
+        left: 0px;
+        top: 100px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .Redirect {
+        .Redirect-content {
+            .about-content {
+                .about-ul.visible {
+                    transition-duration: 1s;
+                    transform: translate(70px , 0);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .Redirect {
+        .Redirect-content {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .Redirect {
+        .Redirect-content {
+            width: 500px;
+            .h1-content {
+                .h1-teg.visible {
+                    transform: translate(10px, 0px);
+                }
+            }
+            .about-content {
+                .about-words {
+                    .about-ul.visible {
+                        transition-duration: 1s;
+                        transform: translate(30px , 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .Redirect {
+        .Redirect-content {
+            width: 400px;
+            .h1-content {
+                .line {
+                    position: relative;
+                    right: 0px;
+                    margin-top: 60px;
+                }
+                .h1-teg.visible {
+                    .span-for-h1-teg {
+                        position: relative;
+                        top: 20px;
+                    }
+                }
+            }
+            .about-content {
+                .about-words {
+                    .about-ul.visible {
+                        li.about-li {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .Redirect-End {
+            margin-top: 80px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .Redirect {
+        .Redirect-content {
+            width: 350px;
+            .about-ul.visible {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .Redirect {
+        .Redirect-content {
+            width: 280px;
+            .about-ul.visible {
+                margin-top: 30px;
+                position: relative;
+                right: 45px;
+            }
+        }
+        .Redirect-End {
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .Redirect {
+        .Redirect-content {
+            width: 280px;
+            .about-ul.visible {
+                margin-top: 30px;
+                position: relative;
+                right: 25px;
+            }
+        }
+        .Redirect-End {
+            margin-top: 100px;
+        }
+    }
+}

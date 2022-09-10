@@ -1,0 +1,80 @@
+.loading {
+    .loading__content {
+        width: 500px;
+        height: 200px;
+       // border: 2px solid green;
+        margin: 0 auto;
+        position: relative;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .loading__line {
+            display: flex;
+            width: 90%;
+            min-height: 17px;
+            border: 3px solid rgb(73, 73, 73);
+            border-radius: 10px;
+            overflow: hidden;
+            .loading__lines {
+                display: flex;
+                width: 1200px;
+                height: 17px;
+                z-index: 1;
+                position: relative;
+                right: 0px;
+                transform: translate(-0px ,0px);
+                animation-name: loading;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                @keyframes loading {
+                    0% {transform: translate(-0px ,0px);}
+                    100% {transform: translate(-470px ,0px);}
+                }
+                .loading__first-line {
+                    width: 40px;
+                    height: 100%;
+                    background-color: rgb(167, 3, 3);
+                    border: 1px solid black;
+                    /*
+                    animation-name: loading;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    @keyframes loading {
+                        0% {width: 10%;}
+                        100% {width: 100%;}
+                    }*/
+                }
+                .loading__two-line {
+                    width: 40px;
+                    height: 17px;
+                    background-color: rgb(238, 238, 238);
+                    border: 1px solid black;
+                    z-index: 10;
+                    box-shadow: inset 0px 0px 2px 0.5px black;
+              }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 510px) {
+    .loading {
+        .loading__content {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .loading {
+        h1 {
+            margin-left: 10px;
+        }
+        .loading__content {
+            width: 300px;
+        }
+    }
+}

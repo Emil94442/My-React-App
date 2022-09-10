@@ -1,0 +1,32 @@
+.ElementForAdd {
+    padding-bottom: 10px;
+    display: flex;
+    position: relative;
+    left: 10px;
+    .list-content {
+        box-sizing: border-box;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        min-height: 25px;
+        background-color: wheat;
+        position: relative;
+        left: 20px;
+        margin-top: 7px;
+        color: black;
+        overflow: hidden;
+        .FiDelete {
+            align-self: center;
+            width: 30px;
+            height: 25px;
+            &:hover {
+                background-color: rgb(255, 196, 0);
+            }
+            &:active {
+                background-color: red;
+            }
+        }
+    }
+}
