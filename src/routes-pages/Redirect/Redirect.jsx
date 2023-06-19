@@ -78,7 +78,7 @@ const Redirect = () => {
            </div>
         </div>
       </div>
-      <h1 className={isVisibleTwo ? 'Redirect-End visible' : 'Redirect-End'}>Made by Emil on the ReactJS!</h1>
+      <h1 className={isVisibleTwo ? 'Redirect-End visible' : 'Redirect-End'}>Made by Emil on the React</h1>
     </div>
   )
 }
